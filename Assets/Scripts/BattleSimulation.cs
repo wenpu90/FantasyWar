@@ -44,24 +44,8 @@ public class BattleSimulation : MonoBehaviour
     {
         StartCoroutine(AttackMovement());
     }
-    public void UseItem()
-    {
-        Debug.Log("asd");
-    }
-    public void UseDodge()
-    {
 
-    }
-    public void UseBlock()
-    {
-
-    }
-    public void UseSkill()
-    {
-
-    }
-
-    IEnumerator AttackMovement()
+    IEnumerator AttackMovement()//insert target number
     {
         int unit = 0;
         while(unit < players.Count)
